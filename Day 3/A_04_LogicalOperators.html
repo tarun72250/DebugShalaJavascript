@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Logical Operators in Javascript</title>
+  </head>
+  <body>
+    <script>
+       let a = 10 ; 
+       let b = 20;
+
+       //Logical and (&&)
+       document.write(a<b && a==10)//both true return true
+       document.write("</br>")
+       document.write(a>b && a==10)//if one true and one false return false
+       document.write("</br>")
+       document.write(a<b && a==1)//both false return false
+   
+
+       //Logical and (||)
+       document.write("</br>")
+       document.write(a<b || a==10)//both true return true
+       document.write("</br>")
+       document.write(a<b || a==10)//if one true and one false return true
+       document.write("</br>")
+       document.write(a>b || a==1)//both false return false
+   
+
+       //logical not
+       document.write("</br>")
+       let g = 50;
+       document.write(g!=50)
+       let h  = "Tarun";
+       
+       document.write("</br>")
+       document.write(typeof(h))
+       
+
+    </script>
+  </body>
+</html>

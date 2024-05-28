@@ -1,0 +1,31 @@
+For all of these create separate some .html files.
+Arithmetic Operators (5):
+
+Addition: Write code for two numbers, adds them, and displays the result in browser.
+Subtraction: Write code for two numbers, subtracts the second from the first, and displays the difference in browser.
+Multiplication: Write code for two numbers, multiplies them, and displays the product in browser.
+Division: Write code for two numbers, divides the first by the second (ensure the denominator is not zero), and displays the quotient. Handle potential division by zero errors with an appropriate message.
+Modulo: Write code for two numbers, performs the modulo operation (remainder after division), and displays the result.
+
+Comparison Operators (4):
+
+Equality: Write code for two numbers and checks if they are equal. Display a message indicating whether they are equal or not in browser.
+Inequality: Write code for two numbers and checks if they are not equal. Display a message indicating the result in browser.
+Greater Than/Less Than: Write code for two numbers and checks if the first is greater than or less than the second. Display the appropriate message in browser.
+Greater Than or Equal To/Less Than or Equal To: Write code for two numbers and checks if the first is greater than or equal to, or less than or equal to, the second. Display the appropriate message.
+
+Logical Operators (3):
+
+AND: Write code for two numbers and checks if both are greater than 10. Use the && (AND) operator and display a message based on the result in browser.
+OR: Write code for two numbers and checks if at least one of them is even. Use the || (OR) operator and display a message based on the result in browser.
+NOT: Write code for a number and checks if it's negative. Use the ! (NOT) operator and display a message based on the result in browser.
+
+Assignment Operators (3):
+
+Simple Assignment: Write code that declares a variable x and assigns it the value 5. Then, print the value of x.
+Addition Assignment: Write code that declares a variable y and assigns it the value 10. Then, add 5 to y using the += operator and print the updated value in browser.
+Multiplication Assignment: Write code that declares a variable z and assigns it the value 3. Then, multiply z by 2 using the *= operator and print the updated value in browser.
+
+Ternary Operator(1):
+
+Ternary Operator: Write code for a number and checks if it's positive. Use the ternary operator to conditionally display "The number is positive" or "The number is non-positive."
