@@ -42,4 +42,6 @@ Sample Output :
 19. Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0.
 
 20. Write a program that greets the user based on the time of day. Display good morning, good afternnon or good evening based on the time of day when you run the code.
-
+21. Write a program which tells the number of days in a month.
+22. Check if a day is weekend day or a working day. Your script will take day as an input.
+ 
