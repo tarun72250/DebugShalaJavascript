@@ -1,0 +1,45 @@
+1. Write a js code which accept input through prompt and print table of that number.
+
+2. Write a js code which accept input through prompt and find the Sum of Even/Odd Numbers between (1 to 100):
+
+3. Write a js code which accept input through prompt and find the Factorial of a Number.
+
+4. Guessing Game with Number of Attempts:
+This code creates a guessing game where the user has a limited number of attempts (5 in this example) to guess a randomly generated number between 1 and 100. It uses for and if statements to track attempts and provide feedback to the user.
+
+5. Write a js code which accept input through prompt and check num Even or Odd Number Check and print result recordingly.
+
+6. Write a js code which accept input through prompt and check Positivity of a number.
+
+7. Write a js code which accept input through prompt and  print table of that number.
+
+8. Write a js code which aceept num from user and find is this num is bigger from 100 or smallest of 100.
+
+9. Write a js code which aceept year from user and find is this Leap Year Check if yes print leap year if not print not leap year:
+
+10. Write a js code which aceept num from user and find the sum till that no.
+
+11.  Write a JavaScript program that displays the largest integer among two integers.
+
+12. Write a JavaScript for loop that iterates from 0 to 15. For each iteration, it checks if the current number is odd or even, and displays a message on the screen.
+Sample Output :
+"0 is even"
+"1 is odd"
+"2 is even"
+
+13. Write a JavaScript program that iterates integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers multiples of both three and five print "FizzBuzz".
+
+14. Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
+
+15. Write a JavaScript program to sum 3 and 5 multiples under 1000.
+
+16. Print the ODD numbers from 7 to 31.
+
+17. Print the EVEN numbers from 10 to -20
+
+18. Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+19. Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0.
+
+20. Write a program that greets the user based on the time of day. Display good morning, good afternnon or good evening based on the time of day when you run the code.
+
