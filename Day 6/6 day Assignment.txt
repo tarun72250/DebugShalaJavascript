@@ -1,0 +1,169 @@
+1. Write a JavaScript program to calculate the factorial of a given number. 
+2. Write a JavaScript program to print that pattern.
+
+1
+12
+123
+1234
+12345
+
+3. Write a JavaScript program to print that pattern.
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+
+4. Write a JavaScript program to print that pattern.
+
+1
+2 3
+4 5 6
+7 8 9 10
+
+5. Write a JavaScript program to print that pattern.
+
+12345
+1234
+123
+12
+1
+
+6. Write a JavaScript program to print that pattern.
+
+    1
+   123
+  12345
+ 1234567
+123456789
+
+7. Write a JavaScript program to print that pattern.
+
+  1
+ 234
+56789
+
+8. Write a JavaScript program to print that pattern.
+
+*****
+*****
+*****
+*****
+*****
+
+9. Write a JavaScript program to print that pattern.
+
+*****
+*   *
+*   *
+*   *
+*****
+
+10. Write a JavaScript program to print that pattern.
+
+    *
+   **
+  ***
+ ****
+*****
+
+11. Write a JavaScript program to print that pattern.
+
+    *
+   ***
+  *****
+ *******
+*********
+
+12. Write a JavaScript program to print that pattern.
+
+54321
+5432
+543
+54
+5
+
+13. Write a JavaScript program to print that pattern.
+
+*
+**
+* *
+*  *
+*   *
+******
+
+
+14. Write a JavaScript program to print that pattern.
+
+$
+$$
+$$$
+$$$$
+%%%%%
+%%%%
+%%%
+%%
+%
+
+
+15. Write a JavaScript program to print that pattern.
+
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+
+16. Create 4 functions for each operation i.e. ‘+’, ‘-‘, ‘*’, ‘/’.Take the operation, both numbers num1 & num2  or operand(+,*,-,/) as well from input from user using prompt and display the result .
+Hint A_04_Fun.html in day 6
+
+17. same as ques no 16 but implement switch case .
+
+18. Write a JavaScript program to find the greatest common divisor (GCD) of two positive numbers using recursion
+
+19.  Write a JavaScript program to get integers in the range (x, y) using recursion.  
+Example : range(2, 9)
+Expected Output : [3, 4, 5, 6, 7, 8]
+
+20. Write a JavaScript program to compute the exponent of a number.  
+Note : The exponent of a number says how many times the base number is used as a factor.
+82 = 8 x 8 = 64. Here 8 is the base and 2 is the exponent.
+
+21. Write a JavaScript program to get the first n Fibonacci numbers.  
+Note : The Fibonacci Sequence is the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, . . . Each subsequent number is the sum of the previous two.
+
+22. Write a JavaScript function that reverses a number.
+Example x = 32243;
+Expected Output : 34223
+
+23. Write a JavaScript function that checks whether a passed string is a palindrome or not?
+A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+
+24. Write a JavaScript function that returns a string that has letters in alphabetical order.
+Example string : 'webmaster'
+Expected Output : 'abeemrstw'
+
+25. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+Example string : 'The quick brown fox'
+Expected Output : 5
+
+26. Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not using recursion.
+Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+27.Write a JavaScript function that checks whether a number is perfect.
+According to Wikipedia : In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself (also known as its aliquot sum). Equivalently, a perfect number is a number that is half the sum of all of its positive divisors (including itself).
+Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.
+
+28. Write a JavaScript function to compute the value of bn where n is the exponent and b is the base. Accept b and n from the user and display the results.
+
+29. Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.  
+
+30. Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  

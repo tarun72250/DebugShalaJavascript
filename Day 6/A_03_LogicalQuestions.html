@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Logical code inside function in js </title>
+    </head>
+    <body>
+        <script>
+         //find factorial
+            function printFactorial(n)
+            {
+                let result = 1;
+                for(let i = n ; i>=1 ; i--)
+                {
+                    result *=i;
+                }
+                document.write(result);
+            }
+
+            printFactorial(7);
+            document.write("</br>");
+            
+
+
+
+            function printPrime(n)
+            {
+                //handle non-posistive number 
+                if(n<=1)
+                {
+                    return false;
+                }
+
+                //
+                for(let i =2 ; i * i <= n ; i++)
+                {
+                    if(n % i === 0)
+                    {
+                        return false;
+                    }
+                }
+
+                //if no divisr found 
+                return true;
+            }
+
+            function findPrimtUptoLimit(limit)
+            {
+                for(let a = 2 ; a <= limit ; a++)
+                {
+                    if(printPrime(a))
+                    {
+                         document.write(a +" it is prime number </br>")
+                    }
+                }
+            }
+
+            findPrimtUptoLimit(100);
+
+
+            function findFactorialRec(num)
+            {   
+                //base factorial 
+                if(num === 0 )
+                {
+                    return 1;
+                }
+                else
+                {
+                    return num * findFactorialRec(num-1)
+                }
+            }
+
+            document.write(findFactorialRec(9));
+          
+
+        </script>
+    </body>
+</html>
