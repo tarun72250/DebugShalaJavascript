@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practise Question in js</title>
+  </head>
+  <body>
+    <script>
+      //1.
+      let str = 'tarun"';
+      document.write(str.length); //6
+
+      //2.
+      const sentence = "The quick brown fox jumps over the lazy dog.";
+
+      const word = "fox";
+
+      document.write(
+        `</br>The word "${word}" ${
+          sentence.includes(word) ? "is" : "is not"
+        } in the sentence`
+      );
+
+      //mdn endsWith refrence
+      const str2 = "Cats are the best!";
+
+      document.write("</br>"+str2.endsWith("best!") + " </br>");
+      // Expected output: true
+
+      const str3 = "Is this a question?";
+
+      document.write(str3.endsWith("question") + " </br>");
+      // Expected output: false
+
+      //Ques3
+      document.write(str2.toLowerCase() + " </br>");
+      document.write(str3.toUpperCase() + " </br>");
+
+       //Ques4
+       let str4 = "Hello 1000";
+       let amount = str4.slice(6);
+       document.write(amount);
+       document.write("</br>"+typeof(amount));
+       //u had to convert that String into number
+
+
+       //Ques5
+       let dude = "Rakesh";
+       //change k to m
+       dude[3] = "m";
+       document.write(dude)
+
+       //Ques6
+
+
+       is_string = function(input)
+       {
+        if(Object.prototype.toString.call(input) === "[object String]")
+        return true;
+        else return false;
+       }
+
+       document.write("</br>"+is_string("Hello DebugShala...!"));
+
+        document.write("</br>"+is_string([1,2,3,4]));
+       
+
+        
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+1.How to replace multiple spaces with single space in JavaScript?
+2.How to replace all occurrences of a string in JavaScript?
+3.How are strings stored in JavaScript?
+4.What is the correct way to check for string equality in JavaScript?
+5.How to convert a string into a integer without using parseInt() function in JavaScript?
+6.How to generate all combinations of a string in JavaScript?
+7.How to find unique characters of a string in JavaScript?
+8.How to convert an object to string using JavaScript?
+9.How to get the first three characters of a string using JavaScript?
+10.How to check a given string is an anagram of another string in JavaScript?
+11.How to create half of the string in uppercase and the other half in lowercase?
+12.How to get a number of vowels in a string in JavaScript?
+13.How to add method to String class in JavaScript?
+14.How to remove text from a string in JavaScript?
+15.How to remove all Non-ASCII characters from the string using JavaScript?
+16.How to insert a string at a specific index in JavaScript?
+17.How to globally replace a forward slash in a JavaScript string?
+18.How to remove a character from string in JavaScript?
+19.How to convert string to camel case in JavaScript?
+20.How to convert string into float in JavaScript?
+
+
+For refrence use URL :- https://www.geeksforgeeks.org/javascript-string-programming-examples/

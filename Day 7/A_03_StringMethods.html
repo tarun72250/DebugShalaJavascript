@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Properties and Methods</title>
+  </head>
+  <body>
+    <script>
+      //lengthH
+      let name = "DebugShala";
+      document.write(`Length of ${name} : ` + name.length);
+
+      //charAt()The charAt() method returns the character at a specified index (position) in a string:
+      let text = "HELLO WORLD";
+      let char = text.charAt(0);
+      document.write("</br>" + char);
+
+      //charCodeAt(0);The method returns a UTF-16 code (an integer between 0 and 65535).
+      let text1 = "ABC";
+      let char1 = text1.charCodeAt(2);
+      document.write("</br>" + char1);
+
+      //at();The at() method returns the character at a specified index (position) in a string.
+      let text2 = "Tarun Kumawat";
+      let char2 = text2.at(2);
+      document.write("</br>" + char2);
+
+      //slice() :-The method takes 2 parameters: start position, and end position (end not included).
+      let text3 = "DebugSahla";
+      let char3 = text3.slice(5, 7);
+      document.write("</br>" + char3);
+      let char4 = text3.slice(8); //overloaded
+      document.write("</br>" + char4);
+      //If a parameter is negative, the position is counted from the end of the string:
+      let char5 = text3.slice(-5);
+      document.write("</br> :- " + char5);
+      //This example slices out a portion of a string from position -12 to position -6:
+      let char6 = text3.slice(-9, -6);
+      document.write("</br>" + char6);
+
+      //subString()The difference is that start and end values less than 0 are treated as 0 in substring().
+      let str = "Apple, Banana, Kiwi";
+      let part = str.substring(7, 13);
+      document.write("</br>" + part);
+
+      let part1 = str.substring(7);
+      document.write("</br>" + part1);
+
+      //subStr() :-The difference is that the second parameter specifies the length of the extracted part.
+      let str2 = "Dog , Cat , Giraffe";
+      let part2 = str2.substr(12, 7);
+      document.write("</br>" + part2);
+      let part3 = str2.substr(6); //overloaded
+      document.write("</br>" + part3);
+
+      //toLowerCase()
+      let part4 = str2.toLowerCase();
+      document.write("</br>" + part4);
+
+      //toUpperCase()
+      let part5 = str2.toUpperCase();
+      document.write("</br>" + part5);
+
+      let strConcat = part4.concat(" ", part5);
+      document.write("</br> ConCat :- " + strConcat);
+
+      let name1 = "DEBUGSHALA";
+      let name2 = name1.concat(" MERN STACK DEVELOPMENT");
+      document.write("</br>" + name2);
+
+      /*
+Note
+All string methods return a new string. They don't modify the original string.
+
+Formally said:
+
+Strings are immutable: Strings cannot be changed, only replaced.
+        */
+    </script>
+  </body>
+</html>
