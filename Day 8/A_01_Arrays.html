@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays in js </title>
+    </head>
+    <body>
+        <script>
+                let car1 = "Saab";
+            let car2 = "Volvo";
+            let car3 = "BMW";
+            let car4 = 4;
+            let cart5 = false;
+
+
+            const a = [1,false,"Alfaiz",4,5];
+            a[3]=40;
+                    // 0  1  2  3  4  5 
+            document.write(a[0]);
+            document.write("</br>"+a[1]);
+            document.write("</br>"+a[2]);
+            document.write("</br>"+a[3]);
+            document.write("</br>"+a[4]);
+            document.write("</br>"+a[5]);//undefined
+
+            //length
+            document.write("</br> Length o the array :-"+a.length);//length of the array
+
+            //Arrays are mutable and array can be updataed as well.
+            //In js arrays are objects.
+            document.write(typeof(a))
+
+            //1. way
+            //const cars = [];
+            // cars[0]= "Volvo";
+            // cars[1]= "Maruti";
+            // cars[2]= "Hyundai";
+            // cars[3]= "Alto";
+            
+            //2 way 
+            const cars = new Array("Volvo","Maruti","Hyundai","Alto");//no need to use this type of array declaration
+            let car = cars[0];
+           
+            //Note : Array indexes starts from always 0
+            //array last value will be length() -1
+            let c = cars[cars.length - 1];
+            document.write("</br>"+c);
+
+
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            let fruit = fruits[fruits.length - 1];
+            document.write("</br>"+fruit);
+            
+            //1.way
+            document.write("</br>"+fruits);
+            //2.way            
+            document.write("</br>"+fruits.toString());
+
+            let text = "<ul>";
+            for(let i=0 ; i <fruits.length ; i++)
+            {
+               text += "<li>"+fruits[i]+"</li>";
+            }
+            text += "</ul>";
+            document.write(text);
+
+            fruits[4]= "Kiwi";
+            fruits.push("Watermelon");
+            document.write("</br>"+fruits);
+
+            fruits[10]= "Kiwi";
+            document.write("</br>"+fruits);//creates undefined and holes in array
+
+            const person = [];
+            person[0] = "John";
+            person[1] = "Doe";
+            person[2] = 46;
+            person.length;    // Will return 3
+            person[0];   //John
+
+            document.write("</br>"+person);
+
+            //Arrays and Objects difference 
+            //In js , arrays are use number indexes
+            //In js , objects are named indexes.
+            
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+1. Declare one basic array in javascript.
+2. Declare one basic array using a new keyword.
+3. Create an blanked array of size 5 in JavaScript and then add some items.
+4. Create an array and Iterating Over an Array in JavaScript using for loop and index wise access.
+5. How do I check if an Array includes a value in JavaScript? using for loop and inside this if condition.
+6. Write a JavaScript Program to Access Elements in an Array.
+7. Write a JavaScript Program to Determine the Length of an Array.
+8. JavaScript Program to Swap First and Last Elements in an Array
+9. Declare one array and printed that array in bulleted list.
+10. Declare one array and printed that array elements in increasing order of their numbers.
+11. Accept the element to be searched in array from user . Check weather the element is present and if present at which index present find that index.
+12. Write a JavaScript program to find the maximum number in an array. 
+13. Write a JavaScript program to find the minimum number in an array. 
+14. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). 
+15. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
+16. Write a recursive function to calculate the factorial of a given number. 
+17. Implement a function that takes two arrays and merges them into a single array.
+18. How do you find the duplicate number on a given integer array? and find out the count of their repetations.
+19. How do you remove duplicates from an array in place?
+20. Given an array of integers sorted in ascending order.
+21. Given an array of integers sorted in descending order.
+22. Given an array of integers and find out the average of the array.
+23. Given an array of integers and find out the total sum of the array.
+24. Given an array of -ve integers and find out the maximum number of the array.
+25. Given an array of -ve integers and find out the minimum number of the array.
