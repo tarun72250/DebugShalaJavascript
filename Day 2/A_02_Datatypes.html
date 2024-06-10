@@ -7,9 +7,9 @@
     <script>
       document.write("Primitive Datatypes ....!</br>")
       let a = 10;//number
-      let b = null;//
+      let b = null;//null
       let c = "Tarun";//String
-      let d = undefined;//
+      let d = undefined;//undefined
       let e = true;//boolean 
       let f = BigInt("867458345887653876348754");//BigInt Long integer value
 
@@ -18,11 +18,14 @@
 
       document.write("</br> </br>   Non-Primitive Datatypes ....!</br>  Represents a collection of key-value pairs, where keys are strings (or symbols) and values can be of any data type. </br>  ")
     
+      //Object
       const student =
       {
         name : "Arun",
         age : 25 ,
-        college : "DVP"
+        college : "DVP",
+        mobileNo :9876789876,
+        city : "indore"
       }
 
       document.write("</br>Student Object :- "+student.name);
@@ -31,7 +34,9 @@
       
       document.write("</br>"+student.college);
 
-      
+      document.write("</br>"+student.city);
+
+      document.write("</br>"+student.mobileNo);
 
     </script>
   </body>

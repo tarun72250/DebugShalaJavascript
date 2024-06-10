@@ -4,34 +4,34 @@
   </head>
   <body>
     <script>
-      let a = 10;
-      let b = "10";
+      let a = 10;//number
+      let b = "10";//String
       document.write(a == b); //losely typed checking
       document.write("</br>");
       document.write(a != b);
       document.write("</br>");
-      document.write(a === b); //strictly typed checking
+      document.write(a === b); //false :- because they do (type and their value as well)strictly typed checking
       document.write("</br>");
       document.write(a !== b); //strictly typed checking
 
       let c = 20;
       let d = 40;
       document.write("</br>");
-      document.write(c > d); //greater than
+      document.write(c > d); //greater than , false 
 
       document.write("</br>");
-      document.write(c < d); //less than
+      document.write(c < d); //less than , true
 
       document.write("</br>");
-      document.write(c >= d); //Greater  than equals to
+      document.write(c >= d); //Greater  than equals to , false
 
       document.write("</br>");
-      document.write(c <= d); //less than equals to
+      document.write(c <= d); //less than equals to  , true
 
-      //Trernanry Operators
+      //Trernary Operators
       let e = 30;
       let f = 40;
-      let result = e < f ? "e is bigger" : "f is bigger";
+      let result = e > f ? "e is bigger" : "f is bigger";
       document.write("</br>");
       document.write(result); //less than equals to
     </script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array Methods in js</title>
+  </head>
+  <body>
+    <script>
+
+
+      //A.Adding and Removing the elemenets in array
+      //1.From End
+      //pop()
+      let a = [2,8,6,4,10,6,88,77,];
+      let b = a.pop();
+      document.write(b);//last element
+
+      //push()
+      a.push(12);
+      document.write("</br>"+a);//last element
+
+      //2.From Start
+      //shift()
+      let c = a.shift();
+      document.write("</br>"+c);
+
+      //unshift()
+      a.unshift(1);
+      document.write("</br>"+a);//first element
+
+      //3. middle
+      //splice()
+      //splice (startIndex , No_Of_Ele_deleted, ele_to_be_inserted)
+      a.splice(2,0,11,22);
+      document.write("</br>"+a);//first element
+
+      a.splice(2,1,33,44);
+      document.write("</br>"+a);//first element
+
+      a.splice(2,2);
+      document.write("</br>"+a);//first element
+
+
+
+      //B.Converting Array to String
+      //1.toString()
+      document.write("</br>"+typeof(a.toString()));
+      
+      //2.join()
+      document.write("</br>"+a.join("-"))
+      document.write("</br>"+typeof(a.join("-")))
+
+      //C.Searching in array
+      let z = a.indexOf(6);//3
+      document.write("</br> 6 index :- "+z);//first element
+
+      let x = a.lastIndexOf(6)
+      document.write("</br> 6 index :- "+x);//first element
+
+      //D.Part of the Array 
+      var slice = a.slice(2,5);//starting from 2 and last index escape
+      document.write("</br>"+slice)
+
+      var slice1 = a.slice(3);
+      document.write("</br>"+slice1)
+
+      var slice2 = a.slice(1,-2);
+      document.write("</br>"+slice2)
+
+
+
+      //E.Deletion in array
+      delete(a[0]);
+      document.write("</br> deletion of a[0] :- "+a);//
+      document.write("</br> a[0] :- "+a[0]);//first element
+
+      //F.Concating the array
+      let ab = [11,22,33,44,55];
+      let bc = [111,222,333,444,555];
+      let da = [111,222,333,444,555];
+
+
+      let cd = ab.concat(bc,da);
+      document.write("</br>"+cd)
+    
+
+      //G.Sorting the array
+      a.sort();
+      document.write("</br>"+a);//these will sort alphabeticall ,
+      //means natural sorting 
+
+      //sort in ascending order
+      a.sort(function(a,b){return a-b});
+      document.write("</br>"+a);
+
+      //sort in descending order
+      a.sort((a,b) => b-a);
+      document.write("</br> Desc order"+a);
+
+
+    //H. Reversing the array
+    a.reverse();
+    document.write("</br>"+a);
+
+    
+      
+      
+    
+
+
+    
+
+    </script>
+  </body>
+</html>

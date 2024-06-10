@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate all combinations of a string in JavaScript </title>
+  </head>
+  <body>
+    <script>
+
+
+    let combi = ( str ) =>{
+        let outComes = [];
+        for( let i =0 ; i<str.length ; i++)//C
+        {
+            for(let j = i+1 ; j < str.length + 1 ; j++)//C
+            {
+                outComes.push(str.slice(i,j));//A , AB , ABC  , B , BC , C
+            }
+        }
+    return outComes;    
+
+    }        
+
+       document.write(combi("ABC"));
+     
+    </script>
+  </body>
+</html>

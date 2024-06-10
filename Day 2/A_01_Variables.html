@@ -5,31 +5,57 @@
   </head>
   <body>
     <script>
+
+      //varibale :- Container :- which hold some type of value
+      // a = 7;//number
+      // b = "Arun";//String
+
+      //Rules for declaring variable
+      //1. letter , digit , underscore & $ sign used to declared variable.
+      //2.must begin with a $ , _ or a letter.
+      //3.js reserved words we cannot used .
+      //4.arun aand ARUN both meaning are different(Case -sensitive)
+      arun = 10;
+      ARUN = "wer";
+
+
+      // a =33;
+      // document.write(a);
+      // a="arun"
+      // document.write(a);
+
+
+      //in js we declared variable in some scopes
       //In JS three ways to decalred any variable :- let var const
       //Var
       //  var a = 50;
-      //  a = "Sumit";//re-decalred and re-assignment-allowed --- but we can't used it .
-      //  a = 30;
+      //  var a = "Sumit";//re-decalred and
+      //  a= "aman";// re-assignment-allowed 
+      //  //--- but we can't used it .
+      //  //a = 30;
       //  document.write("var value a= "+a);//if i want to run on browser
       //  console.log(a)//if i want to run on console 
 
 
 
       // //let variable 
-      let a = 10; //
-      //let a = 12; //re-declaration is not possibile
-      a=12;//re-assignment is possible
-      document.write(a); //block level useful;
+      //let a = 10; //
+      // //let a = 12; //re-declaration is not possibile
+      // a="h";//re-assignment is possible
+      // document.write(a); //block level useful;
 
       // {
       //   let a = 15;
       //   document.write(a);
       // }
+      // document.write(a);
+
 
       // //const = constant
-      // //const a = 10;//decalaration
-      // //a = "Tarun";//re-assigned which is not allowed
-      // //document.write("Const value a= "+a);
+      const a = 10;//decalaration
+      //const a = 20;//re-declaration is not allowed
+      //a = "Tarun";//re-assigned which is not allowed
+      document.write("Const value a= "+a);
     </script>
   </body>
 </html>
