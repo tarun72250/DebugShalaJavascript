@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array Higher order methods</title>
+  </head>
+  <body>
+    <script>
+        //Array Higher order methods
+        //reduce time 
+        //Higher order fn :- Higher order functions are functions that operate on other functions, either by receiving them as arguments or by returning them. It is a function that accepts a function as a parameter or returns a function as the output.
+
+        //1.Array map(value , index , array)
+        let nums = [10,20,30,40,50,60,70];
+        //Anonymous fn
+        let squares = nums.map(function (v){
+            return v*v;
+        })
+        document.write(squares);
+
+        //arraow fn
+        let squares1 = nums.map((v)=> v*v);
+        document.write("</br>"+squares1);
+
+        //fn named 
+        function myConvert(v)
+        {
+            return v * v;
+        }
+
+        let squares2 = nums.map(myConvert);
+        document.write("</br>"+squares2);
+
+
+        //2.Array reduce()
+        //return signle value 
+        let sum = nums.reduce(function(v, add){
+            return v+add;
+        })
+        document.write("</br>sum : "+sum);
+
+
+
+
+
+        //3.Array filter() :-
+        var filterArr = nums.filter(function(v){return v %2==0 });
+        document.write("</br>filter array  : "+filterArr);
+
+
+        var filterArr1 = nums.filter(v => v <30);
+        document.write("</br>filter array  : "+filterArr1);
+
+        //That will not modify original array
+        document.write("</br>"+nums);
+
+
+
+        //4.Array every() return true or false
+        let alldivby3 = nums.every(v => v%3 ==0);
+        document.write("</br>"+alldivby3);
+
+
+
+        //5. Array some()
+        let somedivby3 = nums.some(v => v%3 ==0);
+        document.write("</br>"+somedivby3);
+
+
+
+
+        
+
+    </script>
+  </body>
+</html>

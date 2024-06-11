@@ -1,0 +1,46 @@
+1. Create an array of 10 integer and display their item in numbered list using for of loop.
+
+2. Create an array of 10 String and display their item in unordered list using for in loop.
+
+3. Create an array of some value and display their results in square using forEach() method.
+
+4. Create an array of some String and display their each char in '-' separated.
+
+5. Create an array of some floating value and display their value and their index in unordered list using forEach() method.
+
+6. Write a js code to create an array of integers, Accept the number of the array from user using prompt() , display all array elements in ordered list using forEach() method.
+
+7. Accept the alement to be searched in the array from user . Check weather the element is present and if present at which index.
+
+8. Sort the number on numeric values using Named function.
+
+9. Create the array of fruits name and Display all the names in alphabetical order.
+
+10. Display the sum , average of the array of integer value using reduce() method.
+
+11. Check weather all the numbers are even.
+
+12. Check weather all numbers are prime.
+
+13. Create an array take value from user through prompt and sort value in ascending order.
+
+14. Declare an array take input from user and generate maximum and minimum number and display in browser.
+
+15. Create 2 arrays of even and odd numbers (use filter fn).
+
+16. Create an array for taking input from user through prompt() and display values in bulleted list using anonyomous fn.
+
+17. Use reduce to calculate factorial of a given number from an array of first n natural numbers ( n being the number whose factorial needs to be calculated).
+
+18. create an array of cube  of given numbers.
+
+19. Write a js code which take input from user and find their factorial numbers.
+
+20. There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
+Sample array :
+array1 = [1,0,2,3,4];
+array2 = [3,5,6,7,8,13];
+Expected Output :
+[4, 5, 8, 10, 12, 13]
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iteration Advanced in arrays</title>
+  </head>
+  <body>
+    <script>
+      //Normal for loop
+      let a = [2, 4, 6, 8, 10];
+
+      for (let i = 0; i < a.length; i++) {
+        document.write(a[i] + "</br>");
+      }
+
+      //for of loop
+      //shortcut for loop
+      for (let i of a) {
+        document.write(i + "</br>");
+      }
+
+      //for in loop
+      //useful for where we get the keys from objects.
+      for (let i in a) {
+        document.write(i + "</br>");
+        //document.write(a[i]+"</br>");
+      }
+
+      //forEach() loop
+      a.forEach((ele) => {
+        document.write(ele * ele + "</br>");
+      });
+
+      //Array from() rear uses .
+      let name = "Ajay Parihar";
+      let b = Array.from(name);
+      document.write(b);
+    </script>
+  </body>
+</html>
