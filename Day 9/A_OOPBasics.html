@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Oriented Programming Basics</title>
+  </head>
+  <body>
+    <script>
+      /*
+        How is Object-Oriented Programming implemented in JavaScript? 
+        How does it differ from other languages? 
+        Can you implement Inheritance in JavaScript?
+        and so on…
+
+        There are certain features or mechanisms which make a Language Object-Oriented like:
+
+        Object
+        Classes	
+        Abstraction
+        Encapsulation
+        Inheritance	
+        Polymorphism
+
+
+        Object :- Object is tangible(physical :- Student , Person , Employee) and non-tangible(account , software  ) entity.
+                Object has some state.
+                Object can execute certain behaviour.
+                Object has some unique identity.
+                Object has some role in a particular system.
+
+        Note: A Method in javascript is a property of an object whose value is a function. 
+
+        The object can be created in two ways in JavaScript:
+
+        Object Literal
+        Object Constructor
+
+        Example:1. Using an Object Literal.
+
+        // Defining object
+        let person = {
+            first_name: 'Tarun',
+            last_name: 'Rathore',
+
+            //method
+            getFunction: function () {
+                return (`The name of the person is 
+                ${person.first_name} ${person.last_name}`)
+            },
+            //object within object
+            phone_number: {
+                mobile: '12345',
+                landline: '6789'
+            }
+        }
+        document.write(person.getFunction());
+        document.write(person.phone_number.landline);
+
+        Output: The name of the Person is tarun rathore
+        6789
+
+
+        Example:2. Using an Object Constructor.
+
+        // Using a constructor
+        function person(first_name, last_name) {
+            this.first_name = first_name;
+            this.last_name = last_name;
+        }
+        // Creating new instances of person object
+        let person1 = new person('tarun', 'rathore'); // new is a keyword , which creates Object 
+        let person2 = new person('Piyush', 'Bhagat');
+        
+        document.write(person1.first_name);
+        document.write(`${person2.first_name} ${person2.last_name}`);
+
+        Output: tarun
+        Piyush Bhagat
+
+
+        Note: The JavaScript Object.create() Method creates a new object, using an existing object as the prototype of the newly created object.
+
+        Example:
+
+        // Object.create() example a
+        // simple object with some properties
+        const coder = {
+            isStudying: false,
+            printIntroduction: function () {
+                console.log(`My name is ${this.name}. Am I 
+                    studying?: ${this.isStudying}.`)
+            }
+        }
+        // Object.create() method
+        const me = Object.create(coder);
+
+        // "name" is a property set on "me", but not on "coder"
+        me.name = 'tarun';
+
+        // Inherited properties can be overwritten
+        me.isStudying = true;
+
+        me.printIntroduction();
+
+        Output: My name is tarun . Am I Studying?: true
+        -----------------------------------------------------------------------------------------------------
+
+
+        Class :- Class is a template or blueprint where we can define state and behaviour of particular Object.
+                or we can A class can have many Objects because the class is a template while Objects are instances of the class or the concrete implementation. 
+                
+           Note :-Before we move further into implementation, we should know unlike other Object Oriented languages there are no classes in JavaScript we have only Object. To be more precise, JavaScript is a prototype-based Object Oriented Language, which means it doesn’t have classes, rather it defines behaviors using a constructor function and then reuses it using the prototype. 
+
+           Note: Even the classes provided by ECMA2015 are objects.
+
+           The class syntax is not introducing a new object-oriented inheritance model to JavaScript. JavaScript classes provide a much simpler and clearer syntax to create objects and deal with inheritance. 
+
+           Example: Let’s use ES6 classes then we will look at the traditional way of defining an Object and simulate them as classes.
+
+           // Defining class using es6
+            class Vehicle 
+            {
+                constructor(name, maker, engine) 
+                {
+                    this.name = name;
+                    this.maker = maker;
+                    this.engine = engine;
+                }
+                getDetails() 
+                {
+                    return (`The name of the bike is ${this.name}.`)
+                }
+            }
+
+            // Making object with the help of the constructor
+            let bike1 = new Vehicle('Hayabusa', 'Suzuki', '1340cc');
+            let bike2 = new Vehicle('Ninja', 'Kawasaki', '998cc');
+
+            console.log(bike1.name); // Hayabusa
+            console.log(bike2.maker); // Kawasaki
+            console.log(bike1.getDetails());
+
+            Output: Hayabusa
+                    Kawasaki
+                    The name of the bike is Hayabusa.
+                
+            
+            
+            Example: Traditional Way of defining an Object and simulating them as classes.
+
+            // Defining class in a Traditional Way.
+            function Vehicle(name, maker, engine) 
+            {
+                this.name = name,
+                    this.maker = maker,
+                    this.engine = engine
+            };
+            
+
+             //here in fn based Object we should not use any fn inside it.
+
+            Vehicle.prototype.getDetails = function () 
+            {
+                document.write('The name of the bike is ' + this.name);
+            }
+            
+            let bike1 = new Vehicle('Hayabusa', 'Suzuki', '1340cc');
+            let bike2 = new Vehicle('Ninja', 'Kawasaki', '998cc');
+            
+            document.write(bike1.name);
+            document.write(bike2.maker);
+            document.write(bike1.getDetails());
+
+            Output: Hayabusa
+                    Kawasaki
+                    The name of the bike is Hayabusa.
+           
+            As seen in the above example it is much simpler to define and reuse objects in ES6. Hence, we would be using ES6 in all of our examples.    
+        */
+    </script>
+  </body>
+</html>

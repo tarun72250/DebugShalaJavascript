@@ -1,0 +1,35 @@
+1. Write a JavaScript program to list the properties of a JavaScript object.
+Sample object:
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
+Sample Output: name,sclass,rollno
+
+2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.
+Sample object:
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };.
+
+3. Write a JavaScript program to get the volume of a cylindrical with four decimal places using object classes.
+Volume of a cylinder : V = πr2h
+where r is the radius and h is the height of the cylinder.
+
+4. Write a JavaScript function to retrieve all the names of an object's own and inherited properties.
+person has fname and lname and their age define as date month and year and display that all objects.
+
+5. Create Object Using an Object Literal and siplay their data and functions.
+
+6. Create Object Using an Object Constructor and siplay their data and functions.
+
+7. Create Object Using The JavaScript Object.create() Method creates a new object.
+
+8. Create Object Using the ES6 classes and create object using new Keyword.(hint :- class are defined)
+
+9. Create Object Using Traditional Way of defining an Object and create object using new keyword.(hint :- functions are defined)
+
+10. Create Date class and in constructor pass date , month , year and in class define method showDate() which actually show the date.
+
+ 
