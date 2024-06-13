@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Abstraction in js</title>
-    </head>
-    <body>
-       <script>
-       
-       //Abstraction adn Encapsulation.
-       //Abstraction :- Selective Ignorance
-       //Whateever things u want just select it whaterever not want just removed it or ignored it.
-       //focusing only what is imp or what is not imp for me that is the concept of abstraction.
+  <head>
+    <title>Abstraction in js</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Abstraction: Selective Ignorance
+        Means :- Whatever things u want just select it whatever not want just removed or ignoring it.
+        Focusing only what is important or ignorning or removing what is not important is the concept of Abstraction.
 
-       //Real life ex :- Person as a student , Person as patient , Person as employee.
+        Real life ex :- Person as student , Person as patient , Person as employee.
 
-       //Abstraction is all about designing our classsses.
+        Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. 
 
-       
-       </script>
-    </body>
+
+        Encapsulation: Binding and Bundling the data and functions.
+        Binding and Bunding the state and Behaviour into one unit that unit is (class)
+        that mechanism is called as Encapsulation.
+        or The process of wrapping properties and functions within a single unit is known as encapsulation.
+
+        Real life ex:- whenever any person don't ask about your age , they can't exactly told your age.
+
+        Example: Let’s understand encapsulation with an example.
+        // Encapsulation example
+        class person {
+            constructor(name, id) {
+                this.name = name;
+                this.id = id;
+            }
+            add_Address(add) {
+                this.add = add;
+            }
+            getDetails() {
+                console.log(`Name is ${this.name},
+                Address is: ${this.add}`);
+            }
+        }
+
+        let person1 = new person('tarun', 23);
+        person1.add_Address('Delhi');
+        person1.getDetails();
+
+        Output: In this example, we simply create a person Object using the constructor, Initialize its properties and use its functions. We are not bothered by the implementation details. We are working with an Object’s interface without considering the implementation details. 
+
+        Output : name is tarun , Address is Delhi
+
+         Most of the OOP languages provide access modifiers to restrict the scope of a variable, but there are no such access modifiers in JavaScript, there are certain ways by which we can restrict the scope of variables within the Class/Object.
+
+         // Abstraction example
+        function person(fname, lname) 
+        {
+            let firstname = fname;
+            let lastname = lname;
+
+            let getDetails_noaccess = function () 
+            {
+                return (`First name is: ${firstname} Last 
+                    name is: ${lastname}`);
+            }
+
+            this.getDetails_access = function () 
+            {
+                return (`First name is: ${firstname}, Last 
+                    name is: ${lastname}`);
+            }
+        }
+        let person1 = new person('Tarun', 'Rathore');
+        console.log(person1.firstname);
+        console.log(person1.getDetails_noaccess);
+        console.log(person1.getDetails_access());
+
+        Output: In this example, we try to access some property(person1.firstname) and functions(person1.getDetails_noaccess) but it returns undefined while there is a method that we can access from the person object(person1.getDetails_access()). By changing the way we define a function we can restrict its scope.
+
+        Output : First name is : Tarun and Last name is : rathore
+
+
+        */
+    </script>
+  </body>
 </html>
