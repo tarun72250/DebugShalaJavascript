@@ -1,0 +1,19 @@
+1. Create the array of 5 integer values and inside this array display every second to iterate.
+
+2. Using log() in console define one array and iterate them.
+
+3. check odd and even no between 1 - 10 if no is greater than that throw error msg no is bigger or less than 0.
+
+4. create some object of employee information and display employee data in Console.table().
+
+5. create some data and that data use warn() and info() method of Console.
+
+6. write a js code which display data in year month and day format only.
+
+7. If we want to get specific date , hour and year of current date use getDate() , getHours() , getFullYear().
+
+8. If we want to set specific seconds , time , month of particular date use setSeconds(59) , setTime(999) , setMonth(11).
+
+9. Declare two dates and compare that dates and check if they are equal or not .
+
+10. Create one date and display date using toDateString().

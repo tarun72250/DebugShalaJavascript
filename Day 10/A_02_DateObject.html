@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Date class in js</title>
+    </head>
+    <script>
+
+     //current date and time
+     let cdate = new Date();
+      document.write(cdate);
+
+
+      //For Getting specific Date components
+      document.write("</br>"+cdate.getDate());
+      document.write("</br>"+cdate.getDay());
+      document.write("</br>"+cdate.getMonth());
+      document.write("</br>"+cdate.getFullYear());
+      document.write("</br>"+cdate.getHours());
+      document.write("</br>"+cdate.getMinutes());
+      document.write("</br>"+cdate.getSeconds());
+      document.write("</br>"+cdate.getTime());
+      
+      //For Setting specific Date components
+      document.write(cdate.setDate(4));//set date/time (1-31)
+      document.write("</br>"+cdate);
+      document.write(cdate.setFullYear(4));//optionally month and day
+      document.write("</br>"+cdate);
+      document.write(cdate.setHours(22));//set hours (0-23)
+      document.write("</br>"+cdate);
+      document.write(cdate.setMilliseconds(999));//set milliseconds (0-999)
+      document.write("</br>"+cdate);
+      document.write(cdate.setMinutes(59));//set minutes (0-59)
+      document.write("</br>"+cdate);
+      document.write(cdate.setMonth(11));//set month 0-11
+      document.write("</br>"+cdate);
+      document.write(cdate.setSeconds(59));//set seconds (0-59)
+      document.write("</br>"+cdate);
+      document.write(cdate.setTime(999));//set the time (milliseconds since janueay 1 , 1970)
+      document.write("</br>"+cdate);
+
+      //Note :Equality operators (== and ===) don't work with Date objects, so we don't explicitely check if they're the same.
+
+      
+      
+
+      
+
+      let cdate1 = new Date("2022-3-16")
+      document.write("</br>"+cdate1);
+
+      let cdate2 = new Date("October 13 , 2022 11:13:00");
+      document.write("</br>"+cdate2);
+
+
+      //Year month day Hours Minutes Seconds
+      let cdate3 = new Date(2024, 6, 14, 10,33,22,0);
+      document.write("</br>"+cdate3);
+     
+      //Note : Js counts of months 0-11
+
+      //Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
+
+
+      let cdate4 = new Date(2024,13);
+      document.write("</br>"+cdate4);
+     
+
+      //Js stores Date as miliseconds
+      //January 01, 1970.
+      //One day (24 hours) is 86 400 000 milliseconds.
+      const d = new Date(100000000000);
+      document.write("</br>"+d);
+
+      const d1 = new Date(24 * 60 * 60 * 1000);
+      document.write("</br>"+d);
+
+      const d3 = new Date(0);
+      document.write("</br>"+d3);
+
+      //Date methods()
+      document.write("</br>"+d.toString());
+      document.write("</br>"+d.toDateString());
+      document.write("</br>"+d.toUTCString());
+
+
+
+    </script>
+    </body>
+</html>
