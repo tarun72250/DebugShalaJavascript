@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>setTimeout()</title>
+  </head>
+  <body>
+    <script>
+     //Window have Some more global fns
+      //setTimeout();
+      //The setTimeout() method calls a function call after a number of milliseconds.
+      //1 second = 1000 milliseconds.
+      //The setTimeout() is executed only once.
+      //setTimeout(function(){document.write("Delayed function executed")},2000);
+      //this is basically used for automatic refresh
+      
+      const myTimeout = setTimeout(myGreeting, 2000);
+      
+      function myGreeting() {
+       document.write("Hello From DebugShala  by setTimeout()...!");
+     }
+     //myTimeout();
+
+      // //It will clear that time out 
+     function myStopFunction() {
+       clearTimeout(myTimeout);
+       }
+
+
+
+     // Example usage: stop the timeout after 500 milliseconds (0.5 seconds)
+     setTimeout(myStopFunction, 500);
+
+     //If i want to open new window and after a while window will be closed
+     //const myWindow = window.open("", "", "width=200, height=100");
+     //setTimeout(function() {myWindow.close()}, 3000);
+
+    </script>
+  </body>
+</html>

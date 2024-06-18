@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+      <script>
+      //setInterval();
+       //setInterval(alert("Hii"),1000);
+      //executed after a time again n again.
+     
+      //The setInterval() method continues calling the function until clearInterval() is called, or the window is closed.
+      //1 second = 1000 milliseconds.
+
+      const myInterval = setInterval(myGreeting, 3000);
+      function myGreeting() 
+      {
+        document.write("Hello From DebugShala by setInterval()...!");
+      }
+      //myInterval();
+
+       // //It will clear that time out 
+    //    function myStopFunction() {
+    //     clearInterval(myInterval);
+    //     }
+
+    //   // Example usage: stop the timeout after 500 milliseconds (0.5 seconds)
+    //   setInterval(myStopFunction, 500);
+    
+      </script>
+    </body>
+</html>
