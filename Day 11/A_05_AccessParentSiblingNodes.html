@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Access Parent and Sibling in DOM</title>
+  </head>
+  <body>
+    <script>
+      //Properties of Dom Collection.
+      //1. They are read only.
+      //2. Mostly iterate through for of loop.not use for in loop
+      //if u should use only for iteration so use for of loop
+
+      //Sibling :- sibling are the node that are children of same parent.
+      //for ex:-
+      //In html like head and body are sibling.
+      //or we can say that body is the right or next sibling of head.
+      //or we can say that head is the left or previous sibling of body.
+
+      //The next sibling is in nextSibling property , and the previous one is previousSibling property and the parent is available as parentNode.
+
+    //   document.write(document.documentElement.parentNode);
+    //   document.write(document.documentElement.nextSibling);
+    //   document.write(document.documentElement.previousSibling);
+
+
+      function logDocumentRelations() 
+      {
+        document.write("Parent Node: ", document.documentElement.parentNode);
+        document.write("Next Sibling: ", document.documentElement.nextSibling);
+        document.write("Previous Sibling: ", document.documentElement.previousSibling);
+      }
+      //<!DOCTYPE html>
+      //<html>
+      logDocumentRelations();
+
+    </script>
+  </body>
+</html>

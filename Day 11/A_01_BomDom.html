@@ -1,99 +1,39 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-    </head>
-    <body>
-        <script>
-      
-      
-----------------------------------------------------------------------------------------------
+  <head>
+    <h1>Bom Dom Html</h1>
+  </head>
+  <body>
+    <script>
       //BOM AND DOM and js core fetures work in browser window :-
-            //<script> k execution ko slow kr dete hai 
-            //u don't add some extra modern features
-            //console.log(window);//window is global object
-            //window :- represent current browser window that is opened.
-            //whatever global fn can be used for can be called on window object.
-            
-            //like :- 
-            //window.alert("alert of window.");
-            
-            //similarily the way document Object is available for js code even, window Object is available.
-            //window is global object
-            //window.console.log(window);
+      //<script> k execution ko slow kr dete hai
+      //u don't add some extra modern features
+      //console.log(window);//window is global object
+      //window :- represent current browser window that is opened.
+      //whatever global fn can be used for can be called on window object.
 
-             //If i want to open new window and after a while window will be closed
-            const myWin = window.open("", "", "width=200, height=100");
-            myWin.document.write("<h1>Hello From New Window...!</h1>")
-            myWin.resizeTo(500,500);
-            myWin.alert("hi from new window")
-            myWin.focus();
-            
-            function getInfo()
-            {
-                alert(window.name);
-                alert(window.location.href);
-                alert("moving to another page...!");
-                window.location.href="A_01_Demo.html";
-            }
+      //like :-
+      //window.alert("alert of window.");
 
-            getInfo();
+      //similarily the way document Object is available for js code even, window Object is available.
+      //window is global object
+      //window.console.log(window);
 
+      //If i want to open new window and after a while window will be closed
+      const myWin = window.open("", "", "width=200, height=100");
+      myWin.document.write("<h1>Hello From New Window...!</h1>");
+      myWin.resizeTo(500, 500);
+      myWin.alert("hi from new window");
 
--------------------------------------------------------------------------------------------------
-  //DOM :- All over the html page is javascript object.
-        //that page named is Document
-        document.write(document);
-        console.log(document);
-        console.log(document.body);
+      function getInfo() {
+        alert(window.name);
+        alert(window.location.href);
+        //alert("moving to another page...!");
+        //window.location.href="A_01_Demo.html";
+      }
 
-
-        //Window object respresents browser window and provides some methods to control it ,
-        //it is a global objects 
-        //this provide a way to control all over the Browser window 
-       
-        //DOM :- Document Object Model
-        //dom reprsents the page content as HTML.
-        //through this u can change style , and render dynamic content thrugh these 
-        //Dom :- API ( Collection of readymade Code)
-        //means :- Object properties and Method
-        //or we can also say that Parent Child and sibling Relationship.
-        //which allow to modify style , content , or structure of html page , dynamically at(rum-time occurence of any event).
-
-        //ex:- img displayed in bigger size on mouse hover event.
-        //selecting some radio button which will display some div on the page .
-        //modifying style :- on focusing event background color of form feild should be changed.
-        //after click of button , button gets disabled .
-
-        //DOM :- Always viewed as Node Tree. which is created for HTML document.
-        
-
-
-       // document.body//your whole page body
-        
-        //if u wanted u changed background color through js code .
-        document.body.style.backgroundColor="Yellow";
-
-        //js is all about mind of web page .
-        //what logic u should use all things will be written in js already.
-        
-        //But above code is not valid , u want to change something when user perform some event or action than only js changed else not.
--------------------------------------------------------------------------------------------------
-  //BOM 
-            //represents the additional objects provided by the Browser
-            //(host environment)
-            //for working with everything except the document.
-
-            //the function alert/prompt/confirm are also part of the bom.
-
-
-            //ex;- if i want to click some button i will redirect in google page 
-            //ex;- if i want to click some button i will redirect in fackbook page 
-            //soo all these functionalities we did with BOM.
-
-            //run in concole directly.
-            location.href="https://www.google.com";
-
-        </script>
-    </body>
+      getInfo();
+    </script>
+  </body>
 </html>

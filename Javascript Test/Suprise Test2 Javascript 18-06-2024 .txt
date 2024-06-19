@@ -1,0 +1,11 @@
+Design an html form to accept a string from the user and perform basic functions .
+1. Calculate the length of the string.
+2. Convert the string to uppercase , lower case 
+3. Check which alphabet is present at 4 index and also find its aciee value.
+
+Accept the date of birth of the user using a form and perform the following operations.
+1.Find the day , month and year separately.
+2.Find the age of the user.
+
+
+

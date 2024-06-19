@@ -1,0 +1,34 @@
+1. Create a js code where one window inside we can open new window or resize it (500,500) and print that data which u have get from prompt in first window.
+
+2. Create a js code where u define a one function and after that fn calling in console page moves in another file .
+
+3. In Html body where u have following things so change the lastchild of body color will be yellow.
+ <body>
+        <p>Hello</p></br>
+        <span>From DebugShala</span></br>
+        <ul><li>Ram</li>
+            <li>Shyam</li>
+            <li>Geeta</li>
+            <li>Mohan</li>
+        </ul>
+ 
+</body>
+
+4. In 3 ques if u access all childNodes , so convert these child nodes to array form.
+
+5. Create a function that outputs the names of the parent, next sibling, and previous sibling of the document's root element (<html>).
+hint :- document.documentElement refers to the root element of the document, typically the <html> element.
+document.documentElement.parentNode refers to the parent node of the <html> element, which is the document itself.
+document.documentElement.nextSibling often returns null because the <html> element is usually the last child of its parent (the document).
+
+6. Find the toal length of the html body content of 3 ques.
+
+7. Can u justify some window info like their window name , window location path , hostname of the current window , protocol of the current window which current window is open and display in browser.
+
+8. Write a js code which access body last child and print in browser and also change their background color = blue.
+<body>
+        <p>Hello</p></br>
+        <span>From DebugShala</span></br>
+	<h4> Hello from h4 tag</h4>
+</body>
+

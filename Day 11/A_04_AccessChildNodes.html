@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Access childNodes in DOM</title>
+    </head>
+    <body>
+        <p>Hello</p>
+        <span>From DebugShala</span>
+        <ul><li>Ram</li>
+            <li>Shyam</li>
+            <li>Geeta</li>
+            <li>Mohan</li>
+        </ul>
+    </br>
+        <script>
+         //How to access any child node using dom tree of html
+            // if i access first child so use 
+            console.log(document.body.firstChild);
+            console.log(document.body.lastChild);
+            console.log(document.body.childNodes);
+            //ChildNodes are seen like an array 
+            //isme app array k fn lga skte ho 
+            //lekin ye actually ek nodeList hai 
+            
+
+            //If u wanted to convert this nodeList to array 
+            let arr = Array.from(document.body.childNodes);//ab ye ek array ban gya 
+            console.log(arr);
+            //childNodes look like an array , but its not actually an array , its an collection 
+            //We can use Array.from(collection) to convert it into an Array .
+            //so that's why Array methods are not work.
+
+        </script>
+    </body>
+</html>
