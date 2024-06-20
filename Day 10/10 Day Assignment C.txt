@@ -1,0 +1,20 @@
+1. Create one table and use this table to get that first element node of that table and print data in console.
+2. use 1 table to access table head and footer of the table and print their data in console.
+3. If I want to access tble body what properties should be used to get the print data in console.
+4. Check type of document and window and print in console.
+5. Create one html page using these data and get element data by id attribute by <h1> and print in console
+<body>
+    <div>Hello Students</div>
+    <h1 id="head">DOM Manipulation in JavaScript</h1>
+    <p id="para1-id">Welcome to the DOM Manipulation lesson by Mr. Smith</p>
+    <p class="para1-class">Today, we will learn about Web Development</p>
+    <p class="para-class">Next, we will explore Data Science fundamentals</p>
+    <button>Click Me</button>
+    <script src="A_08_Dom.js"></script>
+</body>
+6. Using the above html page get select data by className and print in console.
+7. Using the above html page get select data by tagName and print in console.
+8. Using the above html page get select data by method querySelectorAll() using . for class data and print in console.
+9. Using the above html page get select data by method querySelector() using # for id data and print in console.
+10. If I want to use these (#para1-class) which dom method is used.
+

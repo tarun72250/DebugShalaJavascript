@@ -1,0 +1,19 @@
+1.Write a JavaScript function that takes an array of numbers as input and returns the sum of those numbers.
+and after that check that no is prime or not.
+
+2.Write a JavaScript function that takes an array of numbers and returns the maximum number in the array.
+and after that find square of that no.
+
+3.Write a JavaScript function that takes two strings as input and returns true if the second string is a substring of the first string, and false otherwise.
+Test case :
+"Hello World", "World"
+"Hello World", "world"
+
+4.Write a JavaScript function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string.
+
+5.Write a JavaScript function that takes a string as input and returns true if the string is a palindrome (reads the same forwards and backwards) and false otherwise.
+
+6.Write a JavaScript function that takes a string as input and returns an object where the keys are characters and the values are the frequency of those characters in the string.
+
+// Output: { h: 1, e: 1, l: 2, o: 1 }
+
