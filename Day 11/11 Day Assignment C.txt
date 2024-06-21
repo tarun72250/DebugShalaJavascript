@@ -1,0 +1,121 @@
+1. Modifying Elements Using innerText of paragrapg and provide some unique numbers to that text.
+
+<div>
+  <h1>Hello World</h1>
+</div>
+<p class="info">This is a paragraph.</p>
+<p class="info">This is another paragraph.</p>
+<p class="info">This is a paragraph.</p>
+<p class="info">This is another paragraph.</p>
+<p class="info">This is a paragraph.</p>
+<p class="info">This is another paragraph.</p>
+<button id="modify">Modify Text</button>
+
+2. Appending Text Using textContent in h1 tag and modify that h1 text not removing the original content.
+
+<div>
+  <h1>Hello From DebugShala </h1>
+</div>
+<button id="but_id"> By JavaScript Lovers</button>
+
+
+3. Using innerHTML to Add List Items that adds a new list item <li>Orange</li> to the unordered list 
+
+<ul id="fruit-list">
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+<button id="add-fruit">Add Fruit</button>
+
+4. Accessing and Modifying Multiple Elements  using text-content property and add unique no to every element
+
+<div class="class-box" style="visibility: hidden;">Box 1</div>
+<div class="class-box" style="visibility: hidden;">Box 2</div>
+<div class="class-box" style="visibility: hidden;">Box 3</div>
+
+5. Creating and Appending New Elements that creates three new <div> elements with the text "New Element 1", "New Element 2", and "New Element 3" respectively, and appends them to the div id="container".
+
+<div id="container"></div>
+<button id="create">Create Elements</button>
+
+
+6. Using querySelectorAll to Change Style that changes the color of all paragraphs with the class text to blue 
+
+<p class="text">Paragraph 1</p>
+<p class="text">Paragraph 2</p>
+<p class="text">Paragraph 3</p>
+<button id="change-style">Change Style</button>
+
+
+7. Removing Elements from the DOM that removes the last list item from the unordered list with the id list 
+
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+<button id="remove-item">Remove Last Item</button>
+
+8. Creating and Inserting Elements at Specific Positions ,that creates a new list item <li>Yellow</li> and inserts it as the second item in the unordered list with the id color-list 
+
+<ul id="color-list">
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+<button id="insert-color">Insert Color</button>
+
+
+9. Changing Styles that changes the background color of the div with the id box to green using innerHTML property
+
+<div id="box" style="width: 100px; height: 100px; background-color: red;"></div>
+<button id="change-color">Change Color</button>
+
+
+10. Swapping Elements that swaps the positions of the div elements with the ids first and second using InnerText property
+
+<div id="first">First Div</div>
+<div id="second">Second Div</div>
+<button id="swap-button">Swap</button>
+
+
+11. Add some Items in li and append in last at using innerText property
+
+<div>
+<ul id="item-list">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Cherry</li>
+  <li>Date</li>
+  <li>Fig</li>
+</ul>
+</div>
+
+12. Displaying All Tag Names using for of loop and print in console.
+
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<div id="container">Hello ALL From DebugShala</div>
+<p class="text">Paragraph 3</p>
+<button id="show-tags">Show Tag Names</button>
+
+13. Changing Text Content Using innerText property that changes the text of the <h1> element to "New Header" and print in console.
+
+<h1 id="header">Old Header</h1>
+<button id="change-text">Change Text</button>
+
+14. Updating Inner HTML that changes the inner HTML of the div with the id content to <p>New Content</p> 
+
+<div id="content">
+  <p>Old Content</p>
+</div>
+<button id="update-html">Update HTML</button>
+
+15. Using textContent to Display Hidden Text that logs the text content of the hidden paragraph with the id hidden-text to the console using innerHTML property.
+
+<p id="hidden-text" style="display: none;">This is hidden text.</p>
+<button id="show-hidden-text">Show Hidden Text</button>
+
+
+
+
