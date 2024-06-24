@@ -1,0 +1,41 @@
+ <span id="container-id"><b>Javascript </b>DOM Manipulation</span>
+
+1. Retrieve the <span> element using getElementsByTagName and log it to the console using console.log().
+2. Retrieve the <span> element using getElementsByTagName and log it to the console using console.dir() to see its properties.
+3. Log the nodeName of the first child of the body element.
+4. Log the nodeName of the first element child of the body element.
+5. Retrieve the <span> element by its ID (container-id) and log its innerHTML. 
+6. Retrieve the <span> element by its ID (container-id) log its innerText.
+7. Log the outerHTML of the <span> element with ID (container-id).
+8. Modify the outerHTML of this <span> element to a new HTML content <h1>Hello World of Javascript</h1>.
+9. Create a new paragraph element (<p>) with the text "This is a new paragraph".
+Append this new paragraph element as the last child of the body element.
+
+<div id="one" class="hi" data-provider1="data-set1" data-provider2="data-set2">Learning JavaScript Dom Manipulation</div>
+    
+10. Check if the <div> element has a data-provider1 attribute. Log the result to the console.
+Check if the <div> element has a data-provider5 attribute. Log the result to the console.
+11. Set the style attribute of the <div> element to color: red;.
+Verify by logging the value of the style attribute to the console.
+12. Remove the class attribute from the <div> element.
+Check if the class attribute exists after removal by logging the result of hasAttribute() method to the console.
+13. Retrieve the value of the custom attribute data-provider2 and log it to the console.
+Change the value of data-provider2 to "student" and log the updated value to the console.
+14. Retrieve the value of the data-provider1 attribute of the <div> element and log it to the console.
+Change the value of the data-provider1 attribute to "student2" and log the updated value to the console.
+15. Check if the <div> element has an id attribute. Log the result to the console.
+Remove the id attribute from the <div> element.
+Check again if the id attribute exists and log the result to the console.
+16. Set the title attribute of the <div> element to "This is a title".
+Retrieve and log the value of the title attribute to the console.
+17. Add a new custom attribute data-provider3 with the value "student3" to the <div> element.
+Log the value of the data-provider3 attribute to the console.
+18. Create a new span element with the text content "New Span Element".
+Set an attribute data-span with the value "spanValue" to the new span element.
+Append the new span element as a child to the <div> element.
+Log the outer HTML of the <div> element to the console to verify the changes.
+hint :- createElement() and appendChild() method see in w3 resource
+19. Retrieve and log the tag name of the <div> element using nodeName.
+Retrieve and log the tag name of the first child of the <div> element using nodeName.
+20. Change the innerHTML of the <div> element to <b>Hello, World!</b>.
+Log the new innerHTML to the console.

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute , InnerHTML , OuterHTML properties.</title>
+  </head>
+  <body>
+    <span id="one"><b>All </b>Hello from DebugShala</span>
+
+    <script>
+      // console.log()//Return the element from DOM Tree.
+      // console.dir()//return the element as object with its properties.
+
+      // console.log(document.getElementsByTagName("span")[0])
+      // console.dir(document.getElementsByTagName("span")[0])
+
+      //tagName():- only for existing Element in DOM tree
+      //nodeName() :- Defined for any node (text , attribute) etc.
+
+      // console.log(document.body.firstChild.nodeName);//#text
+
+      // console.log(document.body.firstElementChild.nodeName);//span
+
+      // console.log(document.getElementsByTagName("span")[0]);
+
+      //innerHTML() and outerHTML
+      //innerHTML() :- The innerHTML property alows to get the HTML inside the element as a String.
+      //one.innerHTML
+      //output :- <b>All </b>Hello from DebugShala'
+      //one.innerText
+      //output :- All Hello from DebugShala'
+
+      //Note :- Valid for elements having node only , not for text node.(#text)
+
+      //outerHTML()  :- This property contains the full HTML  , the innerHTML + the element iteslf.
+      //one.outerHTML
+      //output :- '<span id="one"><b>All </b>Hello from DebugShala</span>
+      //one.outerHTML ="<h1>Hello</h1>"
+      //Change the whole element
+    </script>
+  </body>
+</html>
