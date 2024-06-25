@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Insertion Methods Practice</title>
+  </head>
+  <body>
+    <header id="header">Welcome to the DOM Practice Session</header>
+    <section class="main-content">
+      <article id="article1" class="article">This is the first article.</article>
+      <article id="article2" class="article">This is the second article.</article>
+      <footer id="footer">End of content.</footer>
+    </section>
+    <script src="practice.js"></script>
+  </body>
+</html>
+
+1. Create a new div element with the content "New Section Added" and append it to the end of the section with the class main-content.
+2. Create a new h2 element with the content "Introduction" and prepend it to the section with the class main-content
+3. Create a new p element with the content "Inserted Before Article 2" and insert it before the article with the id article2.
+4. Create a new p element with the content "Inserted After Article 1" and insert it after the article with the id article1.
+5. Create a new h1 element with the content "Replaced Header" and replace the header with the id header.
+6. Create a new footer element with the content "New Footer Section" and replace the existing footer with the id footer.
+7. Create a new div element with the content "Before Header" and insert it before the header with the id header.
+8. Create a new div element with the content "After Footer" and insert it after the footer with the id footer.
+9. Create a new div element with the content "Append to Body" and append it to the end of the body.
+10. Create a new div element with the content "Prepend to Body" and prepend it to the start of the body.
+
+
+---------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentHTML / Text / Element Practice</title>
+</head>
+<body>
+    <header id="header">Welcome to the Practice Session</header>
+    <section class="content">
+        <div id="container">
+            <div id="box1" class="box">Box 1</div>
+            <div id="box2" class="box">Box 2</div>
+        </div>
+        <div id="box3" class="box">Box 3</div>
+    </section>
+    <footer id="footer">End of content.</footer>
+    <script src="practice.js"></script>
+</body>
+</html>
+
+1. Insert an <h1> element with the content "Inserted Before Header" immediately before the header element using insertAdjacentHTML.
+2. Insert a <p> element with the content "Inserted After Header" immediately after the header element using insertAdjacentHTML.
+3. Insert a <div> element with the content "Inserted At Start of Container" at the beginning of the div with id container using insertAdjacentHTML.
+4. Insert a <div> element with the content "Inserted At End of Container" at the end of the div with id container using insertAdjacentHTML.
+5. Insert a <span> element with the content "Inserted Before Box 2" immediately before the div with id box2 using insertAdjacentHTML.
+6. Insert a <span> element with the content "Inserted After Box 2" immediately after the div with id box2 using insertAdjacentHTML.
+7. Remove the div element with id box3 from the DOM.
+8. Insert a <h2> element with the content "Inserted Before Footer" immediately before the footer element using insertAdjacentHTML.
+9. Insert a <p> element with the content "Inserted After Footer" immediately after the footer element using insertAdjacentHTML.
+10. Create a new div element with the content "Appended to Body" and append it to the end of the body.
+11. Insert the text "Inserted Text Before Header" immediately before the header element using insertAdjacentText.
+12. Insert the text "Inserted Text After Header" immediately after the header element using insertAdjacentText.
+13. Insert the text "Inserted Text At Start of Container" at the beginning of the div with id container using insertAdjacentText.
+14. Create a new span element with the text "Inserted Element After Box 2" and insert it immediately after the div with id box2 using insertAdjacentElement.
+15. Create a new div element with the text "Inserted Element Before Footer" and insert it immediately before the footer element using insertAdjacentElement.
