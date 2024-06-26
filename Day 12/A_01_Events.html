@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in Browser</title>
+  </head>
+  <body>
+    <!-- <div id="container" onmouseover="alert('inside div element onmouseover')">Hello all</div> -->
+
+    <!-- <div id="container" onmouseenter="alert('inside div element onmouseover')">Hello all</div> -->
+
+    <!-- <button id="one" onclick="alert('inside Alert event fired onclick')">CLick Me</button> -->
+
+    <!-- <img id="h1d" src="1.jpg" style="height: 150px; width: 150px;"/>  -->
+
+    <!-- <h1 style="color: blue">Hello All From DebugShala</h1>
+
+    <p>
+      <b>Keyup , onKeydown Events</b>
+    </p>
+
+    <input type="text" id="one" placeholder="press any key...!" />
+    <p id="status">......</p>
+
+    <script src="A_01_Dom.js"></script> -->
+    <h1 id="title">Hello World</h1>
+    <input type="text" id="colorInput" placeholder="Type a color name or hex code">
+
+    <script>
+        const h1Element = document.getElementById("title");
+        const inputElement = document.getElementById("colorInput");
+
+        inputElement.addEventListener("input", function()
+         {
+            const color = inputElement.value;
+            h1Element.style.color = color;
+        });
+    </script>
+  </body>
+</html>
