@@ -1,0 +1,15 @@
+1. Mouse Events: Change Background Color on Mouse Over and Mouse Out.
+Question: Create a <div> element with an id="box" and set its initial background color to lightgrey. Write JavaScript code to change the background color to blue when the mouse is over the div and back to lightgrey when the mouse leaves the div.
+
+
+2.Accept the date from the user a form and find the current age of user.
+
+3.Create an HTML page with a button and a paragraph. Write a JavaScript script that changes the style of the paragraph to display some shadow inside this text when the button is clicked.
+
+4.Write a JavaScript script that loops through an array of numbers and logs each number to the console. Then, create a new array that contains only the even numbers from the original array.
+
+5.Write a JavaScript function to insert a new paragraph with the text "Inserted Paragraph" after an element with the id "insertAfterMe" using insertAdjacentHTML.
+
+Alfaiz :- 25/20
+Vikas :- 25/25
+Yogesh :- 25/10
