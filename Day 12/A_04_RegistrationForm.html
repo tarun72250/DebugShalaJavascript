@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
     <style>
-        table, th, td 
-        {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 10px;
-        }
-        .hidden
-         {
-            display: none;
-        }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      .hidden {
+        display: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Registration Form</h2>
     <form id="registrationForm">
-        <label for="username">User Name:</label>
-        <input type="text" class="form-field" name="username" id="username"><br><br>
-        
-        <label for="email">User Email:</label>
-        <input type="email" class="form-field" name="email" id="email"><br><br>
-        
-        <label for="address">User Address:</label>
-        <input type="text" class="form-field" name="address" id="address"><br><br>
-        
-        <label for="city">User City:</label>
-        <input type="text" class="form-field" name="city" id="city"><br><br>
-        
-        <label for="gender">User Gender:</label>
-        <input type="text" class="form-field" name="gender" id="gender"><br><br>
-        
-        <label for="mobile">User Mobile No:</label>
-        <input type="text" class="form-field" name="mobile" id="mobile"><br><br>
-        
-        <button type="button" onclick="submitForm()">Submit</button>
+      <label for="username">User Name:</label>
+      <input
+        type="text"
+        class="form-field"
+        name="username"
+        id="username" /><br /><br />
+
+      <label for="email">User Email:</label>
+      <input
+        type="email"
+        class="form-field"
+        name="email"
+        id="email" /><br /><br />
+
+      <label for="address">User Address:</label>
+      <input
+        type="text"
+        class="form-field"
+        name="address"
+        id="address" /><br /><br />
+
+      <label for="city">User City:</label>
+      <input type="text" class="form-field" name="city" id="city" /><br /><br />
+
+      <label for="gender">User Gender:</label>
+      <input
+        type="text"
+        class="form-field"
+        name="gender"
+        id="gender" /><br /><br />
+
+      <label for="mobile">User Mobile No:</label>
+      <input
+        type="text"
+        class="form-field"
+        name="mobile"
+        id="mobile" /><br /><br />
+
+      <button type="button" onclick="submitForm()">Submit</button>
     </form>
-    
+
     <h2>User Details</h2>
     <a href="#" onclick="viewData()">View Data</a>
 
     <table id="userTable" class="hidden">
-        <tr>
-            <th>User Name</th>
-            <th>User Email</th>
-            <th>User Address</th>
-            <th>User City</th>
-            <th>User Gender</th>
-            <th>User Mobile No</th>
-            <th>Actions</th>
-        </tr>
+      <tr>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>User Address</th>
+        <th>User City</th>
+        <th>User Gender</th>
+        <th>User Mobile No</th>
+        <th>Actions</th>
+      </tr>
     </table>
-    
-    <script>
-        let userData = [];
 
-        function submitForm() 
-        {
-            const formFields = document.getElementsByClassName('form-field');
-            let rowData = [];
-            
-            for (let i = 0; i < formFields.length; i++)
-             {
-                rowData.push(formFields[i].value);
-                formFields[i].value = ''; // Clear the form field
-            }
-            
-            userData.push(rowData);
-            alert('Data submitted successfully!');
+    <script>
+      let userData = [];
+
+      function submitForm() 
+      {
+        const formFields = document.getElementsByClassName("form-field");
+        let rowData = [];
+
+        for (let i = 0; i < formFields.length; i++) {
+          rowData.push(formFields[i].value);
+          formFields[i].value = ""; // Clear the form field
         }
 
-        function viewData() {
-            const table = document.getElementById('userTable');
-            table.classList.remove('hidden');
+        userData.push(rowData);
+        alert("Data submitted successfully!");
+      }
 
-            // Clear existing table rows except header
-            table.innerHTML = `
+      function viewData() 
+      {
+        const table = document.getElementById("userTable");
+        table.classList.remove("hidden");
+        // Clear existing table rows except header
+
+        table.innerHTML = `
                 <tr>
                     <th>User Name</th>
                     <th>User Email</th>
@@ -91,58 +111,62 @@
                 </tr>
             `;
 
-            userData.forEach((user, index) => {
-                const newRow = document.createElement('tr');
-                let rowData = '';
-                
-                user.forEach(data => {
-                    rowData += `<td>${data}</td>`;
-                });
+        userData.forEach((user, index) => 
+        {
+          const newRow = document.createElement("tr");
+          let rowData = "";
 
-                rowData += `<td>
+          user.forEach((data) => {
+            rowData += `<td>${data}</td>`;
+          });
+
+          rowData += `<td>
                                 <button onclick="editData(${index})">Edit</button>
                                 <button onclick="deleteData(${index})">Delete</button>
                             </td>`;
-                
-                newRow.innerHTML = rowData;
-                table.appendChild(newRow);
-            });
+
+          newRow.innerHTML = rowData;
+          table.appendChild(newRow);
+        });
+      }
+
+      function editData(index) {
+        const formFields = document.getElementsByClassName("form-field");
+        const user = userData[index];
+
+        for (let i = 0; i < formFields.length; i++) {
+          formFields[i].value = user[i];
         }
 
-        function editData(index) {
-            const formFields = document.getElementsByClassName('form-field');
-            const user = userData[index];
+        document.getElementById("registrationForm").onsubmit = function () {
+          updateData(index);
+          return false; // Prevent form submission
+        };
+      }
 
-            for (let i = 0; i < formFields.length; i++) {
-                formFields[i].value = user[i];
-            }
+      function updateData(index) 
+      {
+        const formFields = document.getElementsByClassName("form-field");
+        let updatedData = [];
 
-            document.getElementById('registrationForm').onsubmit = function() {
-                updateData(index);
-                return false; // Prevent form submission
-            };
+        for (let i = 0; i < formFields.length; i++)
+         {
+          updatedData.push(formFields[i].value);
+          formFields[i].value = ""; // Clear the form field
         }
 
-        function updateData(index) {
-            const formFields = document.getElementsByClassName('form-field');
-            let updatedData = [];
+        userData[index] = updatedData;
+        alert("Data updated successfully!");
+        viewData();
+        document.getElementById("registrationForm").onsubmit = submitForm;
+      }
 
-            for (let i = 0; i < formFields.length; i++) {
-                updatedData.push(formFields[i].value);
-                formFields[i].value = ''; // Clear the form field
-            }
-
-            userData[index] = updatedData;
-            alert('Data updated successfully!');
-            viewData();
-            document.getElementById('registrationForm').onsubmit = submitForm;
-        }
-
-        function deleteData(index) {
-            userData.splice(index, 1);
-            alert('Data deleted successfully!');
-            viewData();
-        }
+      function deleteData(index) 
+      {
+        userData.splice(index, 1);
+        alert("Data deleted successfully!");
+        viewData();
+      }
     </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,57 @@
+Explain Synchronous Programming:
+
+1.What is synchronous programming?
+How does the flow of execution work in synchronous programming?
+
+2. What will be the output of the above code and why?
+console.log("Start");
+console.log("Middle");
+console.log("End");
+
+3.Identify the Sequence:
+
+Write a function that logs numbers from 1 to 5 synchronously. Explain how the sequence of execution is maintained.
+Real-World Example:
+
+4.Give an example of a real-world scenario where synchronous programming is preferable.
+
+
+Explain Asynchronous Programming:
+
+5.What is asynchronous programming?
+
+6.How does it differ from synchronous programming?
+Predict the Output with setTimeout:
+
+
+console.log("A");
+setTimeout(function() {
+  console.log("B");
+}, 2000);
+console.log("C");
+What will be the output of the above code and why?
+
+7.Callback Hell:
+
+What is callback hell? Give an example of code that can lead to callback hell.
+How can callback hell be avoided?
+
+8.Explain Callbacks:
+
+What is a callback function in JavaScript?
+How are callback functions used in asynchronous programming?
+
+9.Write a function multiply that multiplies two numbers and a function calculate that takes two numbers and a callback function. Use these functions to multiply two numbers and log the result.
+
+10.What will be the output of the above code and why?
+
+function printMessage(message, callback) {
+  console.log(message);
+  callback();
+}
+
+function logMessage() {
+  console.log("Callback executed");
+}
+
+printMessage("Hello, world!", logMessage);

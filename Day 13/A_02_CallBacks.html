@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallBacks</title>
+  </head>
+  <body>
+    <script>
+      //A callback fn is a function which passed into another function as an arguement , which is then invoked inside the outer function to complete an action.
+
+      // function sum(a, b) {
+      //   console.log(a + b);
+      // }
+
+      // function calculater(a, b, sumCallBack) {
+      //   sumCallBack(a, b);
+      // }
+
+      // calculater(2, 3, sum);
+
+      //CallBack Hell Problem :- 
+      //Term CallBack hell :- Nested Callback stacked below one another forming a pryamind structure.
+      //(Pryamid of DOm)
+
+      //this style of programming difficult to understand and manage.
+
+      //nesting programming
+      //nested if we seen 
+
+      // let a = 19;
+      // if(a >= 20)
+      // {
+      //   if(a > 60)
+      //   {
+      //     console.log("Senior citizen")
+      //   }
+      //   else{
+      //     console.log("Adult")
+      //   }
+      // }
+      // else
+      // {
+      //   console.log("Child");
+      // }
+
+      //loops 
+
+
+
+      //Example :- database fetch
+
+      // function getData(dataId)
+      // {
+      //   setTimeout(()=>{
+      //     console.log("Data",dataId)
+      //   },2000)
+      // }
+      
+      // getData(101);
+      // getData(102);
+      // getData(103);
+      
+
+      //All three Data get directly displayed
+
+      // function getData(dataId,getNextData)
+      // {
+      //   setTimeout(()=>{
+      //     console.log("Data",dataId)
+      //     getNextData();
+      //   },2000)
+      // }
+      
+      // getData(101, getData(102));//we use arrow fn here 
+
+
+      function getData(dataId,getNextData)
+      {
+        setTimeout(()=>{
+          console.log("Data",dataId)
+          if(getNextData)
+          {
+              getNextData();
+          }
+        },2000)
+      }
+      
+      getData(101,()=>{
+        getData(102 , ()=>{
+          getData(103, ()=>{
+            getData(104)
+          })
+        });
+      });
+     
+     
+
+
+
+    </script>
+  </body>
+</html>

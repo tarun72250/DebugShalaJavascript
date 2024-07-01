@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synchronous and Asynchronous Programming</title>
+  </head>
+  <body>
+    <script>
+
+      //Synchronous action are the actions that initiate by someone one-by-one.
+      //meaning that the code run in a particular system of instruction given in the program. Each instruction waits for the previous instructions to complete its execution.
+      // console.log("One....!");
+      // console.log("Two....!");
+      // console.log("Three....!");
+      // console.log("FOur....!");
+
+
+      //Asynchronous Programming  :-
+      //Asnchronous are those actions which initaite by someone and they completed their task ,his is called as Asynchronous programming .
+      //setTimeout();
+      //weather app :-
+      //Share trading app :-
+
+    console.log("One....!");
+    setTimeout(function()
+    {
+      document.write("Hello From DebugShala...!")
+    },4000);
+    console.log("Two....!");
+
+    //CallBack hell << Promisis chains << aysnc await
+
+
+    </script>
+  </body>
+</html>
